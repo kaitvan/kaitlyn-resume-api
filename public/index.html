@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" href="./assets/logo-emerald.png" /> -->
+    <link rel="icon" href="assets/logo-emerald.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KVG API Resume</title>
-    <link href="style.css" rel="stylesheet" />
+    <!-- <link src="css/styles.css" type="text/css" rel="stylesheet" /> -->
   </head>
   <body>
     <section>
@@ -57,11 +57,11 @@
           <li>
             <p class="text">
               Once you have verified that cURL is installed, execute the
-              following code in the command line: <br /><code
-                >curl -k
+              following code in the command line: <br /><span class="code"
+                >curl -k http://localhost:4000/api
                 <button class="button" data-text="curl -k <Insert link here>">
                   Copy text
-                </button></code
+                </button></span
               >
             </p>
           </li>
@@ -100,7 +100,10 @@
             <p class="text">
               Select <span class="btn">GET</span> and enter the following in the
               body:<span class="code"
-                >LINK<button class="button" data-text="<Insert link here>">
+                >http://localhost:4000/api<button
+                  class="button"
+                  data-text="http://localhost:4000/api"
+                >
                   Copy text
                 </button></span
               >
@@ -214,7 +217,6 @@
           </li>
         </ol>
       </article>
-      <article id="contact"></article>
     </section>
     <section>
       <article id="contact">
@@ -234,6 +236,45 @@
         </p>
       </article>
     </section>
-    <script src="script.js"></script>
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
   </body>
 </html>
+
+<style>
+  body {
+    background: lightgray;
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  section {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+  }
+
+  article {
+    padding: 2rem;
+    background: white;
+    color: #2b4743;
+    margin: 20px 0;
+  }
+
+  .code {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0.75rem;
+    margin: 1rem auto;
+    background-color: #2b4743;
+    font-size: 0.85rem;
+    align-items: flex-end;
+    color: #ffffff;
+  }
+</style>
+
+<script></script>

@@ -1,0 +1,14 @@
+body {
+  background: lightgray;
+}
+
+section {
+  max-width: 900px;
+  width: 90%;
+}
+
+article {
+  padding: 2rem;
+  background: white;
+  color: #2b4743;
+}
